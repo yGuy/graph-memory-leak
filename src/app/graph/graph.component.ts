@@ -42,6 +42,7 @@ export class GraphComponent implements AfterViewInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.customGraphComponent.graph.clear();
+    this.customGraphComponent.updateVisual();
     this.customGraphComponent.cleanUp();
   }
 
