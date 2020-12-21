@@ -3,14 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GraphComponent } from './graph/graph.component';
+import { WorkspaceComponent } from './workspace/workspace.component';
+import { HomeComponent } from './home/home.component';
+import {TabMenuModule} from 'primeng/tabmenu';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GraphComponent,
+    WorkspaceComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    TabMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,6 @@
+<app-graph
+  #graphComponent
+  [edges]="edges"
+  [nodes]="nodes"
+  (initialized)="graphComponent.build(); graphComponent.applyLayout()"
+></app-graph>
